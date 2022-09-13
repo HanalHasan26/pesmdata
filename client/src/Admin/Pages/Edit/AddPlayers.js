@@ -69,17 +69,20 @@ const formik =useFormik({
     Height:"",
     Weight:"",
     Condition:"",
-    Price:""
+    Price:"",
+    level:"",
 
   },
+
+  
   
   onSubmit: (values) =>{
-    axios.post(
-    "/api/player",
-    {...values,...select,footPic, teamPic, nationalityPic, playerDp, LeaguePic,...advanceValues,selectedSkills,selectedPlayingStyle,selectedAiStyle}
-    );
-   setOpen(false);
-   setAlertOpen(true);
+     axios.post(
+      "/api/player",
+      {...values,...select,footPic, teamPic, nationalityPic, playerDp, LeaguePic,...advanceValues,selectedSkills,selectedPlayingStyle,selectedAiStyle}
+      );
+      setOpen(false);
+      setAlertOpen(true);
   }
 })
 
@@ -239,6 +242,8 @@ const playerFoot = (value) =>{
       <TextField sx={{mt:5}} onChange={formik.handleChange} value={formik.values.Contract} fullWidth id='Contract' color={'secondary'} label="Contract Duration" variant="outlined" />
       <TextField sx={{mt:5}} onChange={formik.handleChange} value={formik.values.Position} fullWidth id='Position' color={'secondary'} label="Position" variant="outlined" />
       <TextField sx={{mt:5}} onChange={formik.handleChange} value={formik.values.FullNamePosition} fullWidth id='FullNamePosition' color={'secondary'} label="FullName Position" variant="outlined" />
+      <TextField sx={{mt:5}} onChange={formik.handleChange} value={formik.values.level} fullWidth id='level' color={'secondary'} label="Level" variant="outlined" />
+      
       <InputLabel sx={{mt:5}} >Star</InputLabel>
   <Select
     fullWidth

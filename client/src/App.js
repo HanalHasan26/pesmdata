@@ -27,7 +27,7 @@ import Test from './Admin/Components/Test';
  
 
 function App() {
-  return ( 
+  return (
     <div className="App">
       <Routes> 
       <Route path="/" element={<Home/>}/>

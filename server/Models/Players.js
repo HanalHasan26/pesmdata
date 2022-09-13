@@ -8,6 +8,7 @@ const playerSchema = mongoose.Schema({
     League:{type:String},
     Nationality:{type:String},
     Rating:{type:String},
+    level:{type:String},
     Contract:{type:String},
     Position:{type:String},
     FullNamePosition:{type:String},
@@ -28,6 +29,7 @@ const playerSchema = mongoose.Schema({
     nationalityPic:{type:String}, 
     playerDp:{type:String}, 
     LeaguePic:{type:String},
+    
     
     
     OffensiveA:{type:String},

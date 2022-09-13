@@ -55,7 +55,7 @@ useEffect(()=>{
           }else if(data.Fullname.toLowerCase().includes(searchTerm.toLowerCase())){
               return data
           }else{
-            return data
+            return console.log("hi");
           }
         })
       .map((data)=>(

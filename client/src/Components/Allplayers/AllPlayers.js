@@ -37,7 +37,7 @@ const fetchPlayers = async () =>{
 
 }  
 
-useEffect(() => { 
+useEffect(() => {  
  fetchPlayers() 
 })   
 

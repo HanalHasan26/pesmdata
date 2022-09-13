@@ -2,7 +2,7 @@ const asyncHandler = require("express-async-handler");
 const Player = require("../../Models/Players");
 
 const DeclinePlayer = asyncHandler (async(req,res)=>{
-    const { Name,Fullname, Team, League, Nationality, Rating, Contract, Position, FullNamePosition,Age, Height, Weight, Condition, Price, star,
+    const { Name,Fullname, Team, League, Nationality, Rating,level, Contract, Position, FullNamePosition,Age, Height, Weight, Condition, Price, star,
          foot,footUsage,footAcc, form,injury, category, footPic, teamPic, nationalityPic, playerDp, LeaguePic} = req.body;
 
        const { OffensiveA, Finishing, KinkingPower,BallControl, Dribbling, TightPossession, Balance, LowPass,
@@ -18,6 +18,7 @@ const DeclinePlayer = asyncHandler (async(req,res)=>{
     League,
     Nationality,
     Rating,
+    level,
     Contract,
     Position,
     FullNamePosition,
@@ -38,6 +39,7 @@ const DeclinePlayer = asyncHandler (async(req,res)=>{
     nationalityPic, 
     playerDp, 
     LeaguePic,
+    
 
 ///ADVANCE\\\\\\
 
@@ -90,6 +92,7 @@ const DeclinePlayer = asyncHandler (async(req,res)=>{
     League: player.League,
     Nationality : player.Nationality,
     Rating : player. Rating,
+    level : player.level,
     Contract : player.Contract,
     Position: player.Position,
     FullNamePosition:player.FullNamePosition,

@@ -13,7 +13,7 @@ const getPlayerId = asyncHandler(async(req,res)=>{
 
 const updatePlayer = asyncHandler(async(req,res)=>{
     
-    const { Fullname,_id,Name, Team, League, Nationality, Rating, Contract, Position, Age, Height, Weight, Condition, Price, star, foot,footUsage,footAcc,form,injury, category, footPic, teamPic, nationalityPic, playerDp, LeaguePic} = req.body;
+    const { Fullname,_id,Name, Team, League, Nationality, Rating, Contract, Position, Age, Height, Weight, Condition, Price, star, foot,footUsage,footAcc,form,injury, category, footPic, teamPic, nationalityPic, playerDp, LeaguePic,Level} = req.body;
 
     const { OffensiveA, Finishing, KinkingPower,BallControl, Dribbling, TightPossession, Balance, LowPass,
         LoftedPass, SetPieceTaking, Curl, Speed, Acceleration, PhysicalContact, Stamina,Heading, Jumping, DeffensiveAwareness, Tackling,DefensiveEngagement,
@@ -46,6 +46,7 @@ const player = await Player.findByIdAndUpdate(_id,{
     nationalityPic, 
     playerDp, 
     LeaguePic,
+    Level,
 
 ///ADVANCE\\\\\\
 

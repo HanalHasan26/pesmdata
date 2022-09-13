@@ -113,11 +113,11 @@ const SingleSm = ({updatePlayer,open,skills,aiStyle}) => {
               <Typography left={360} mt={1.3} position='absolute' fontWeight={'100'} fontSize={'15px'} fontFamily='Varela Round' >{updatePlayer.OffensiveA}</Typography>
             </Box>
             <Box  height={'40px'} display='flex' >
-              <Typography left={130} mt={1.3} position='absolute' fontWeight={'100'} fontSize={'15px'} fontFamily='Varela Round' >ATTACK</Typography>
+              <Typography left={130} mt={1.3} position='absolute' fontWeight={'100'} fontSize={'15px'} fontFamily='Varela Round' >FINISHING</Typography>
               <Typography left={360} mt={1.3} position='absolute'  fontWeight={'100'} fontSize={'15px'} fontFamily='Varela Round' >{updatePlayer.Finishing}</Typography>
             </Box>
             <Box bgcolor={'#E3DFED'} height={'40px'} display='flex' >
-              <Typography left={130} mt={1.3} position='absolute' fontWeight={'100'} fontSize={'15px'} fontFamily='Varela Round' >ATTACK</Typography>
+              <Typography left={130} mt={1.3} position='absolute' fontWeight={'100'} fontSize={'15px'} fontFamily='Varela Round' >KICKING POWER</Typography>
               <Typography left={360} mt={1.3} position='absolute'  fontWeight={'100'} fontSize={'15px'} fontFamily='Varela Round' >{updatePlayer.KinkingPower}</Typography>
             </Box>
            </Box>

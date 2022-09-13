@@ -8,7 +8,7 @@ const Empty = () => {
  
     const { singlePlayer } = PlayerState();  
 
-  
+   
   return (
     <Box bgcolor={'red'} height={'500px'} display='flex' justifyContent={'center'}>
       <Box mt={30}>
